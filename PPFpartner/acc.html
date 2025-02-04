@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="icon" type="png" href="paw.png">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            text-decoration: underline;
+        }
+        .signin-container {
+            background: #fff;
+            width: 360px;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .signin-container img {
+            width: 75px;
+            margin-bottom: 16px;
+        }
+        .signin-container h1 {
+            font-size: 24px;
+            margin: 0;
+            margin-bottom: 8px;
+            color: #202124;
+            font-weight: 400;
+        }
+        .signin-container p {
+            font-size: 14px;
+            color: #5f6368;
+            margin-bottom: 24px;
+        }
+        .signin-container label {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            color: #202124;
+            margin-bottom: 8px;
+        }
+        .signin-container input[type="email"],
+        .signin-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .signin-container button {
+            background-color: #1a73e8;
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .signin-container button:hover {
+            background-color: #1558b0;
+        }
+        .footer {
+            margin-top: 16px;
+            font-size: 12px;
+            color: #5f6368;
+            text-align: left;
+        }
+        .footer a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="home.html" class="back-button">&#8592; Back To Home</a>
+    <div class="signin-container">
+        <img src="https://ssl.gstatic.com/accounts/ui/logo_2x.png" alt="Google Logo">
+        <h1>Sign in</h1>
+        <p>to continue to Gmail</p>
+        <form action="#" method="post">
+            <label for="email">Email or phone</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Enter your password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Next</button>
+        </form>
+        <div class="footer">
+            <p><a href="#">Forgot email?</a></p>
+            <p>Not your computer? Use a private browsing window to sign in. <a href="#">Learn more</a></p>
+            <p><a href="#">Create account</a></p>
+        </div>
+    </div>
+</body>
+</html>
