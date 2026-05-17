@@ -6,6 +6,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0px;
+    transform: scale(0.9);
+    transform-origin: top center; /* Keeps the page centered at the top */
+    width: 111.11%; /* Compensates for the shrinkage so the page still fills the screen width */
 }
 html {
     scroll-behavior: smooth;
